@@ -1,6 +1,7 @@
-import React from 'react'
-import App from 'next/app'
-import Head from 'next/head' //SEO関連のMeta情報を記述する
+import React from "react"
+import App from "next/app"
+import Head from "next/head" //SEO関連のMeta情報を記述する
+import Layout from "../components/Layout"
 
 /**
  * MyAppｺﾝﾎﾟｰﾈﾝﾄ
@@ -13,12 +14,13 @@ export default class MyApp extends App {
       <>
         <Head>
           <link
-            rel='stylesheet'
-            href='https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css'
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
           />
         </Head>
-
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </>
     )
   }

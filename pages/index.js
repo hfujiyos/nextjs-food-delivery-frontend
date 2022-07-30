@@ -1,4 +1,4 @@
-import { Alert, Button } from 'reactstrap'
+import { Alert, Button } from "reactstrap"
 
 /**
  * indexｺﾝﾎﾟｰﾈﾝﾄ
@@ -8,8 +8,8 @@ const index = () => {
   return (
     <div>
       <div>
-        <Alert color='primary'>Hello Project</Alert>
-        <Button color='primary'>Hello from Next.js</Button>
+        <Alert color="primary">Hello Project</Alert>
+        <Button color="primary">Hello from Next.js</Button>
       </div>
     </div>
   )
