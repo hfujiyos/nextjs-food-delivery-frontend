@@ -11,13 +11,13 @@
   $ cd frontend
   ```
 
-- Next.jsインストール
+- Next.js インストール
 
   ```sh
   $ npm i next@9.4.0 react@16.13.1 react-dom@16.13.1
   ```
 
-- package.json更新
+- package.json 更新
 
   ```json:package.json
   {
@@ -25,7 +25,6 @@
       "dev": "next",
       "build": "next build",
       "start": "next start"
-      <!-- "start": "NODE_ENV=production node server.js" -->
     },
     "dependencies": {
       "next": "^9.4.0",
@@ -35,7 +34,7 @@
   }
   ```
 
-- .gitignore作成
+- .gitignore 作成
 
   ```sh:.gitignore
   .next
@@ -43,13 +42,13 @@
   .env*
   ```
 
-- .env.development作成
+- .env.development 作成
 
   ```sh:.env.development
   NEXT_PUBLIC_API_URL=
   ```
 
-- .prettierrc作成
+- .prettierrc 作成
 
   ```json:.prettierrc
   {
@@ -64,7 +63,7 @@
 
 ## 追加ライブラリ導入
 
-- CSS連携
+- CSS 連携
 
   ```sh
   CSSライブラリ導入
@@ -76,7 +75,7 @@
 - components
   - Layout.js
 - pages
-  - _app.js
+  - \_app.js
   - index.js
 - .env.development
 - .gitignore
