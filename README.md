@@ -72,8 +72,6 @@
 
 ## ディレクトリ構成
 
-- components
-  - Layout.js
 - pages
   - \_app.js
   - index.js
@@ -95,11 +93,12 @@
 ## GitHub へプッシュ
 
 - initial commit
-  ```
+
+  ```sh
   $ git init
-  $ git branch -m master main
   $ git add .
   $ git commit -m "initial commit"
+  $ git branch -m master main
   $ git remote add origin git@github.com:hfujiyos/nextjs-food-delivery-frontend.git
   $ git push -u origin main
   ```
