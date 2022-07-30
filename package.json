@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "next": "^9.4.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "reactstrap": "^9.1.2"
+  }
+}
