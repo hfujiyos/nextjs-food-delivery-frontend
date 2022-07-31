@@ -28,6 +28,8 @@ const QUERY = gql`
  * RestaurantList関数
  * @param {any} props ﾌﾟﾛｯﾌﾟｽ
  * @return RestaurantListｺﾝﾎﾟｰﾈﾝﾄ
+ * @description GraphQLでdata.restaurantsを呼出
+ * @description Hooksのqueryでdata.restaurantsをフィルタリング
  * @description ReactStrapにてxs=2ｶﾗﾑ, sm=3ｶﾗﾑで行列返却
  */
 function RestaurantList(props) {
@@ -35,7 +37,7 @@ function RestaurantList(props) {
 
   if (error) return "レストランの読み込みに失敗しました"
 
-  if (loading) return <h1>読み込み中..</h1>
+  if (loading) return <h1>Loading ...</h1>
 
   if (data.restaurants && data.restaurants.length) {
     //searchQuery
